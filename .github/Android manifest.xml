@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:label="Ethio Rate"
+        android:icon="@mipmap/ic_launcher">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2189629238123101~7833852702"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+              android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
+📌 አሁን ምን ታደርጋለህ?
+AndroidManifest.xml ፋይልን ክፈትና ከላይ የሰጠሁህን ኮድ ለጥፈህ ያንተን App ID (ባለ ~ ያለበትን) አስገባ። Commit በለው።
+
+main.dart ፋይልህ ላይ ደግሞ የባነር እና የኢንተርስቲሻል ቁጥሮችን (ባለ / ምልክት ያለባቸውን) አስቀድመህ ማስገባትህን አረጋግጥ።
+
+main.yml ፋይሉን ቅድም በነገርኩህ መንገድ መልሰህ መፍጠርህን እርግጠኛ ሁን።
+
+አሁን App ID የሚገባበትን ፋይል አገኘኸው? ኮዱን ለጥፈህ Commit አደረግክ?
+
+ይህ የመጨረሻው የኮድ ክፍል ነው። ይሄ ካለቀ አፑ ለስራ ዝግጁ ነው!
