@@ -6,8 +6,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: subosito/flutter-action@v2
-      - run: flutter create . --overwrite
-      - run: flutter pub get
+        with:
+          flutter-version: '3.16.0'
+      - run: rm -rf ./* && git checkout . 
+      - run: flutter create . --overwrite --org com.ethiorate.app
+      - run: rm lib/main.dart
+      - run: flutter pub add google_mobile_ads http
+      - name: Restore main.dart
+        run: git checkout lib/main.dart
+      - name: Restore AndroidManifest
+        run: git checkout android/app/src/main/AndroidManifest.xml
       - run: flutter build apk --release
       - uses: actions/upload-artifact@v4
         with:
